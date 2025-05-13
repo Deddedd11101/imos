@@ -32,7 +32,7 @@ function updateTransform() {
 container.addEventListener('wheel', (e) => {
   e.preventDefault();
 
-  const zoomSpeed = 0.001;
+  const zoomSpeed = 0.0001;
   const zoomDelta = -e.deltaY * zoomSpeed;
 
   const newScale = scale * (1 + zoomDelta);
